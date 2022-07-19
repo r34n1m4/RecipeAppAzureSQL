@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="396b084d-9001-4706-b1c1-84ffa1dcc187" name="RecipeAppAzureSQL" url="jdbc:sqlserver://recipeapp2.database.windows.net:1433;databaseName=recipeappjdbc:sqlserver://recipeapp2.database.windows.net:1433;database=recipeapp;user=recipeapp@recipeapp2;password=Bootcamp123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;" driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+    </data-sources>
+  </component>
+</project>
