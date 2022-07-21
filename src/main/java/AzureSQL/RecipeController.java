@@ -11,10 +11,10 @@ public class RecipeController {
     @Autowired
     private RecipeRepo recipeRepo;
 
-    @GetMapping({"/list", "/"})
+    @GetMapping({"/recipelist"})
     public ModelAndView getAllRecipes() {
-        ModelAndView mav = new ModelAndView("list");
-        mav.addObject("recipe", recipeRepo.findAll());
-        return mav;
+        ModelAndView mav1 = new ModelAndView("recipelist");
+        mav1.addObject("recipe", recipeRepo.findAll());
+        return mav1;
     }
 }

@@ -1,0 +1,58 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>List Ingredients</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <h3>List Ingredients</h3>
+
+    <hr/>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ingredient</th>
+            <th>Description</th>
+            <th>Calories</th>
+            <th>Carbohydrates</th>
+            <th>Fat</th>
+            <th>Protein</th>
+            <th>Water</th>
+            <th>Cholesterol</th>
+            <th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="ingredient: ${ingredients}">
+            <td th:text="${ingredient.id}" />
+            <td th:text="${ingredient.ingr_name}" />
+            <td th:text="${ingredient.ingr_desc}" />
+            <td th:text="${ingredient.calories}" />
+            <td th:text="${ingredient.carbohydrates}" />
+            <td th:text="${ingredient.fat}" />
+            <td th:text="${ingredient.protein}" />
+            <td th:text="${ingredient.water}" />
+            <td th:text="${ingredient.cholesterol}" />
+            <td th:text="${ingredient.ingr_type}" />
+
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+
+
+</body>
+
+</html>
